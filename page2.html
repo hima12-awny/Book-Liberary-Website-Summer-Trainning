@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E2RALY</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="headline">
+        <h2>scroll to see all</h2>
+        <h1>Books to Listen</h1>
+      </div>
+
+      <div id="mainConBook"></div>
+    </main>
+
+    <div id="booInside">
+      <button type="button" value="← Go Back" id="GoBack">← Go Back</button>
+      <div class="bookContainer">
+        <img src="pics\\smapleBook.jpg" alt="" id="img" />
+        <div class="bookData">
+          <h1 id="name"></h1>
+          <p id="Written"></p>
+          <p id="Duration"></p>
+          <p class="Summary">Summary:</p>
+          <p id="Summary"></p>
+          <input type="button" value="Read and listen ↓" id="Readnlisten" />
+        </div>
+      </div>
+
+      <div id="pdfnAudio">
+        <object data="pdf\artofwar.pdf" id="pdfdata">
+          <iframe src="pdf\artofwar.pdf" id="pdfIfram"
+            ><p>This browser does not support PDF!</p></iframe
+          >
+        </object>
+        <audio controls id="audio">
+          <source id="audioSrc" src="" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        this project for FCIS ain shams and made by ibrahim awny, ahmed glal,
+        ahmed reda <br />
+        osama amam and ahmed aymen
+      </p>
+    </footer>
+
+    <header id="header" class="myheaderP2">
+      <img src="pics\\logo2.png" id="logoHeader" alt="" onclick="" />
+      <p id="userName">E2RALY</p>
+      <ul>
+        <li><a href="page1.html">Home</a></li>
+
+        <li><a href="#Log out">Log out</a></li>
+      </ul>
+    </header>
+
+    <script src="js2.js"></script>
+  </body>
+</html>

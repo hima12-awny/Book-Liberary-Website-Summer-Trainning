@@ -1,0 +1,306 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #76adff #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* ********** home *********** */
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url("pics\\book1.png"), url("pics\\Rectangle 2.png"),
+    url("pics\\Rectangle 2.png");
+  background-size: 100% 800px;
+  background-repeat: no-repeat;
+}
+#logo_name {
+  position: absolute;
+  width: 661px;
+  height: 231px;
+  left: 100px;
+  top: 228px;
+  filter: brightness(1.05);
+}
+
+#poly {
+  position: absolute;
+  width: 404.1px;
+  height: 333.7px;
+  top: 207px;
+  transform: matrix(1, 0.04, -0.04, 1, 0, 0);
+  animation: polyAni 2s ease forwards,
+    polRot 5s ease-in-out infinite alternate-reverse;
+
+  left: 1050px;
+  opacity: 0;
+}
+@keyframes polyAni {
+  to {
+    left: 900.9px;
+    opacity: 1;
+  }
+}
+
+@keyframes polRot {
+  to {
+    transform: rotate(350deg);
+  }
+}
+
+#fltBook {
+  position: absolute;
+  width: 524px;
+  height: 400.4px;
+  left: 952px;
+  top: 154.3px;
+
+  transform: matrix(0.99, -0.1, 0.1, 0.99, 0, 0);
+  opacity: 0;
+
+  animation: bookAni 1.5s ease 0.5s forwards;
+}
+
+@keyframes bookAni {
+  to {
+    left: 841px;
+    opacity: 1;
+  }
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  transition: all 0.5s ease;
+  padding: 15px;
+  align-items: center;
+}
+header img {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 70px;
+  top: 10%;
+
+  font-size: 24px;
+  color: white;
+}
+header a {
+  margin: 30px;
+  padding: 2px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+header li {
+  list-style: none;
+  margin-left: 20px;
+}
+header a:hover {
+  color: #c9dfff;
+}
+.sticky {
+  top: 0;
+  width: 100%;
+  background-color: rgba(118, 173, 255, 1);
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+#note {
+  position: absolute;
+  font-size: 24px;
+  color: #76adff;
+
+  width: 627px;
+  height: 35px;
+  left: 104px;
+  top: 480px;
+}
+
+span {
+  font-size: 24px;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/***************previwe******************/
+#preview {
+  width: 100%;
+  height: 735px;
+  background-image: url("pics\\prevBG.jpg");
+  background-size: 100% 735px;
+  z-index: 0;
+}
+.textContainer {
+  width: fit-content;
+  background-color: rgb(240, 248, 255, 0.8);
+  border-radius: 20px;
+  position: absolute;
+
+  margin: 50px;
+  margin-top: 90px;
+}
+
+.hdpreviwe {
+  font-size: 4rem;
+  padding: 20px 20px 0px 20px;
+  color: #76adff;
+}
+.paragpreviwe {
+  padding: 20px;
+  padding-top: 0;
+  font-size: 1.5rem;
+  color: #76adff;
+  width: 372px;
+}
+#bookPreviwe {
+  width: 1000px;
+  height: 632px;
+  background-color: rgb(118, 173, 255, 0.4);
+  position: relative;
+  top: 50px;
+  float: right;
+  right: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+
+  scrollbar-color: #76adff #fff;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  color: #76adff;
+  margin-top: 40px;
+}
+
+/****************about us**************/
+
+.aboutUs {
+  background-image: url("pics\\cofilter.png"), url("pics\\aboutUs.jpg");
+  width: 100%;
+  height: 739px;
+  background-size: cover;
+  background-position: 40px 40px;
+}
+.box {
+  background-color: rgb(118, 173, 255, 0.5);
+  width: 650px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  margin: 100px 50px;
+}
+.box h1 {
+  font-size: 4.5rem;
+}
+.box p {
+  font-size: 1.3rem;
+}
+
+/* ************* form **************  */
+
+#sign {
+  width: 100%;
+  height: 740px;
+  background-image: url("pics\\form\\filter.png"), url("pics\\form\\bg.png");
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 495px;
+  height: 571px;
+  border-radius: 30px;
+  background-color: rgba(254, 254, 255, 90%);
+  box-shadow: 2px 2px 30px #c9c9c9;
+  position: relative;
+  top: 20px;
+}
+form img {
+  width: 58px;
+  margin: 20px;
+}
+form h1 {
+  position: relative;
+  font-size: 4rem;
+  color: #76acff;
+  text-align: center;
+  bottom: 73px;
+}
+
+form input {
+  display: block;
+  position: relative;
+  left: 14%;
+  width: 73%;
+  height: 47px;
+  margin: 10px 0px;
+  bottom: 53px;
+  background-color: rgba(118, 173, 255, 50%);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  box-shadow: 5px 5px 15px -5px rgb(210, 208, 208);
+}
+
+form label {
+  position: relative;
+  color: rgb(255, 255, 255);
+  left: 80px;
+  font-size: 1.2rem;
+  bottom: 100px;
+}
+#submit {
+  font-size: 1.2rem;
+  display: block;
+  width: 100px;
+  position: relative;
+  bottom: 50px;
+  left: 200px;
+  background-color: #76acff;
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #f9f9fa;
+}
+#submit:hover {
+  background-color: #265caf;
+}
+#submit:active {
+  background-color: #083a84;
+}
+
+/********************page 2************************/
+
+.logoHeader {
+  background-color: #76acff;
+}

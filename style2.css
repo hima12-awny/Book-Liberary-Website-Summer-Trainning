@@ -1,0 +1,235 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: #76adff #fff;
+}
+body {
+  text-align: center;
+  scroll-behavior: smooth;
+  scrollbar-color: #76adff #fff;
+}
+
+#main {
+  display: block;
+}
+
+#header {
+  width: 98.25%;
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  transition: all 0.5s ease;
+  padding: 15px;
+  align-items: center;
+  z-index: 1000;
+  background-color: #76adff;
+}
+header img {
+  position: absolute;
+  top: 5px;
+  left: 50px;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 70px;
+  top: 10%;
+
+  font-size: 24px;
+  color: white;
+}
+header a {
+  margin: 30px;
+  padding: 2px;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+header li {
+  list-style: none;
+  margin-left: 20px;
+}
+header a:hover {
+  color: #c9dfff;
+}
+
+#userName {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: aliceblue;
+  top: 18px;
+  left: 120px;
+}
+
+.headline {
+  position: relative;
+  top: 100px;
+  font-size: 1.5rem;
+  color: #76adff;
+}
+
+#mainConBook {
+  width: 90%;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(118, 173, 255, 0.22);
+  position: relative;
+  top: 140px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 160px;
+}
+
+footer {
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  background-color: rgb(118, 173, 255, 0.5);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/******************book inside****************/
+
+#booInside {
+  display: none;
+  margin: auto;
+  margin-top: 70px;
+
+  width: 98.25%;
+  height: fit-content;
+  border: 1px solid #fff;
+
+  margin-bottom: 20px;
+}
+#GoBack {
+  float: left;
+  margin: 20px;
+  margin-left: 120px;
+  padding: 8px;
+  font-size: 1rem;
+  background-color: rgb(117, 172, 255, 0.7);
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+#GoBack:hover {
+  background-color: rgb(53, 104, 180);
+}
+
+.bookContainer {
+  width: 85%;
+  height: fit-content;
+  background-color: rgb(118, 173, 255, 0.6);
+
+  position: relative;
+  right: -112px;
+  margin-top: 70px;
+  margin-bottom: 25px;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bookContainer img {
+  width: 330px;
+  height: 480px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 4px 30px 5px rgba(174, 174, 174, 0.78);
+}
+
+.bookData {
+  width: 68%;
+  height: 476px;
+  background-color: rgb(0, 0, 0, 0.05);
+  margin-right: 30px;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+}
+
+#name {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  font-size: 2.6rem;
+}
+#Written,
+#Duration {
+  margin-left: 35px;
+  margin-top: 30px;
+}
+#Summary,
+.Summary {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  line-height: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.Summary {
+  margin-top: 20px;
+}
+
+#Readnlisten {
+  position: absolute;
+  top: 418px;
+  left: 378px;
+  padding: 10px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(118, 173, 255, 0.5);
+  color: #fff;
+}
+#Readnlisten:hover {
+  background-color: rgb(110, 164, 245);
+}
+#Readnlisten:active {
+  background-color: rgb(12, 76, 172);
+}
+
+#pdfnAudio {
+  display: none;
+  width: 85%;
+  height: 672px;
+  background-color: rgb(118, 173, 255, 0.5);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  margin: auto;
+}
+
+#pdfdata {
+  display: block;
+
+  width: 75%;
+  height: 600px;
+
+  position: relative;
+  top: 10px;
+  margin-left: 12%;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+#audio {
+  position: relative;
+  top: 15px;
+  border-radius: 10px;
+  background-color: #76adff;
+  width: 700px;
+}
